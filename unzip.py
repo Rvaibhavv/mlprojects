@@ -8,5 +8,3 @@ def dataunzip(path,name):
     os.makedirs(unzip_path,exist_ok=True)
     with zipfile.ZipFile(path, 'r') as zip_ref:
         zip_ref.extractall(unzip_path)
-
-
